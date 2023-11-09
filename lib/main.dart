@@ -22,10 +22,22 @@ class MyWidget extends StatelessWidget {
               Text(
                 'محمد عزيز الزمال',
                 style: TextStyle(
+                fontFamily: 'Cairo',
                   fontSize: 38.0,
                   color: Colors.white, 
                  fontWeight: FontWeight.bold,
                 ),
+                ),
+                Text(
+                  'مبرمج تطبيقات',
+                  style: TextStyle(
+                    color: Colors.grey.shade200,
+                    fontSize: 22.0,
+                    fontWeight: FontWeight.bold
+
+                  ),
+
+
                 ),
             ],
           )
