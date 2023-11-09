@@ -30,6 +30,7 @@ flutter:
 
   assets:  # Lists assets, such as image files
     - images/aziz.jpg
+    - images/github.png
     
 
   fonts:              # Required if your app uses custom fonts

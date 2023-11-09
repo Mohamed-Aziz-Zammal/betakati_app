@@ -14,6 +14,7 @@ class MyWidget extends StatelessWidget {
         backgroundColor: Colors.cyan[700],
         body:SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
                 radius: 50.0,
@@ -38,58 +39,74 @@ class MyWidget extends StatelessWidget {
 
                   ),
                 ),
-              Container(
-                margin: EdgeInsets.all(20.0),
-                padding: EdgeInsets.all(10.0),
-                color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      color: Colors.cyan[700],
-                      
-                      ),
-                      SizedBox(
-                        width: 15.0,
-                      ),
-                      Text(
-                        '+216 ** *** 998',
-                        style: TextStyle(
-                          color: Colors.black87,
-                          fontSize: 20.0,
-                        ),
-
-                        ),
-                  ],
-
+                SizedBox(
+                  width: 200.0,
+                  height: 20.0,
+                  child: Divider(
+                    color: Colors.cyan[100],
+                    ),
                 ),
-              ),
-               Container(
-                margin: EdgeInsets.all(20.0),
-                padding: EdgeInsets.all(10.0),
+              Card(
+                margin: EdgeInsets.all(10.0),
+                
                 color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(
+                
+                  child:ListTile(
+                    leading:   Icon(
+                        Icons.phone,
+                        color: Colors.cyan[700],
+                        
+                        ),
+                        title:  Text(
+                          '+216 ** *** 998',
+                          style: TextStyle(
+                            color: Colors.black87,
+                            fontSize: 20.0,
+                          ),
+                
+                          ),
+                  ),
+                ),
+              
+               Card(
+                margin: EdgeInsets.all(10.0),
+                
+                color: Colors.white,
+                child:ListTile(
+                  leading: Icon(
                       Icons.email,
                       color: Colors.cyan[700],
                       
                       ),
-                      SizedBox(
-                        width: 15.0,
-                      ),
-                      Text(
+                      title: Text(
                         'medazizzammal@gmail.com',
-                        style: TextStyle(
+                          style: TextStyle(
                           color: Colors.black87,
                           fontSize: 20.0,
                         ),
 
                         ),
-                  ],
 
                 ),
+                
               ),
+              SizedBox(
+                  width: 200.0,
+                  height: 20.0,
+                  child: Divider(
+                    color: Colors.cyan[100],
+                    ),
+                ),
+             
+               Image(
+                height: 250.0,
+                width: 250.0,
+                image: AssetImage(
+                  'images/github.png',
+                  
+                )
+                 ),
+             
             ],
           )
         ),
