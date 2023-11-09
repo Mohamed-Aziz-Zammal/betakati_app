@@ -13,14 +13,22 @@ class MyWidget extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.cyan[700],
         body:SafeArea(
-          child: Container(
-            child: Text('Hello World'),
-            color: Colors.white,
-            height: 200.0,
-            width: 200.0,
-            margin: EdgeInsets.only(left: 20.0),
-            padding: EdgeInsets.all(20.0),
-          ),
+          child: Column(
+            children: [
+              CircleAvatar(
+                radius: 50.0,
+                backgroundImage: AssetImage('images/aziz.jpg'),
+              ),
+              Text(
+                'محمد عزيز الزمال',
+                style: TextStyle(
+                  fontSize: 38.0,
+                  color: Colors.white, 
+                 fontWeight: FontWeight.bold,
+                ),
+                ),
+            ],
+          )
         ),
       ),
     );
